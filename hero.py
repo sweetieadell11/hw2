@@ -20,7 +20,7 @@ class SuperHero():
                f"health_points: {self.health_points}"
 
     def __len__(self):
-        print(len(self.catchphrase))
+        print("catchphrase: ",len(self.catchphrase))
 
 
 Hero = SuperHero(name='Чёрная_Пантера', nickname='Пантера', superpower='Сила', health_points=100,catchphrase='Ваканда навеки!')
