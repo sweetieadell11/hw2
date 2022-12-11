@@ -34,7 +34,7 @@ print(Hero)
 class SuperHero2(SuperHero):
     siski = 'siski'
 
-    def __init__(self, name, nickname, superpower, health_points, catchphrase, damage=False, fly=False):
+    def __init__(self, name, nickname, superpower, health_points, catchphrase, damage, fly=False):
         super().__init__(name, nickname, superpower, health_points, catchphrase)
         self.damage = damage
         self.fly = fly
@@ -44,7 +44,7 @@ class SuperHero2(SuperHero):
         print(f"health_points ** 2: {self.health_points ** 2}")
 
 
-superhero2 = SuperHero2(name='Joker', nickname='Artur', superpower='Smile', health_points=50, catchphrase='AXAXAXAXAXA')
+superhero2 = SuperHero2(name='Joker', nickname='Artur', superpower='Smile', health_points=50, catchphrase='AXAXAXAXAXA', damage=20)
 superhero2.hp2()
 print(superhero2)
 
@@ -52,7 +52,7 @@ print(superhero2)
 class SuperHero3(SuperHero):
     jopa = 'jopa'
 
-    def __init__(self, name, nickname, superpower, health_points, catchphrase, damage=False, fly=False):
+    def __init__(self, name, nickname, superpower, health_points, catchphrase, damage, fly=False):
         super().__init__(name, nickname, superpower, health_points, catchphrase)
         self.damage = damage
         self.fly = fly
@@ -66,7 +66,7 @@ class SuperHero3(SuperHero):
 
 
 superhero3 = SuperHero3(name='Flash', nickname='Barry_Allen', superpower='speed', health_points=100,
-                        catchphrase='Я-скорость!')
+                        catchphrase='Я-скорость!', damage=20)
 superhero3.hp2()
 print(superhero3)
 superhero3.print_phrase()
@@ -83,7 +83,7 @@ class Villain(SuperHero3):
 
 
 villain = Villain(name='Thanos', nickname='Titan', superpower='Сверхчеловеческая', health_points=50,
-                  catchphrase='Не смогли смириться с поражением!', damage=10)
+                  catchphrase='Не смогли смириться с поражением!', damage=20)
 
 print(villain)
 villain.gen_x()
